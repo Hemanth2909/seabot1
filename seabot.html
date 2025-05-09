@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AI Text Generator & Prediction</title>
+    <link rel="stylesheet" href="seabot.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 AI Text Generator</h1>
+        <p class="subtitle">Start typing below to get smart word suggestions with confidence scores.</p>
+
+        <label for="text-input">Your Input:</label>
+        <textarea id="text-input" placeholder="Type something here..."></textarea>
+
+        <button id="generateBtn">✨ Generate Response</button>
+
+        <div id="predictions-container">
+            <h3>Next Word Predictions</h3>
+            <div class="predictions" id="predictions">
+                <!-- Prediction buttons will appear here -->
+            </div>
+        </div>
+
+        <div class="output-section">
+            <h2>🔍 AI Response</h2>
+            <div id="aiOutput" class="output-box">Your generated response will appear here...</div>
+        </div>
+
+        <div class="loading" id="loadingIndicator" style="display: none;">
+            <div class="spinner"></div>
+            <p>Generating response...</p>
+        </div>
+    </div>
+
+    <script src="seabot.js"></script>
+</body>
+</html>
